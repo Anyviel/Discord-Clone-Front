@@ -1,23 +1,30 @@
 import styled from 'styled-components'
 
-// SL - Server List
-// SN - Server Name
-// CI - Channel Info
-// CL - Channel List
-// CD - Channel Data
-// UL - Users List
-// UI - User Info
+import { ExpandMore } from 'styled-icons/material'
 
-export const Grid = styled.div `
-  display: grid;
+export const Container = styled.div `
+  background-color: var(--secondary);
 
-  grid-template-columns: 71px 240px auto 240px;
-  grid-template-rows: 46px auto 52px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-  grid-template-areas: 
-  'SL SN CI CI'
-  'SL CL CD UL'
-  'SL UI CD UL';
+  padding: 0 11px 0 16px;
 
-  height: 100vh;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 0px 0px;
+  z-index: 2;
+`;
+
+export const Title = styled.h1 `
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--white);
+`;
+
+export const ExpandIcon = styled(ExpandMore)`
+  width: 28px;
+  height: 28px;
+
+  color: var(--white);
+  cursor: pointer;
 `;
