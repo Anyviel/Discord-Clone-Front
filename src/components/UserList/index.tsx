@@ -10,7 +10,7 @@ interface UserProps {
 const UserRow: React.FC<UserProps> = ({ nickname, isBot }) => {
   return (
     <User>
-      <Avatar />
+      <Avatar className={isBot ? 'bot' : ''} />
 
       <strong>{nickname}</strong>
       {isBot && <span>Bot</span>}
@@ -24,7 +24,22 @@ const ServerName: React.FC = () => {
       <Role>Disponível - 1</Role>
 
       <UserRow nickname="Cakito Jr" />
-      <UserRow nickname="Carlin Jr" />
+
+      <Role>Offline - 18</Role>
+      <UserRow nickname="Jarlindo Souza" isBot={true} />
+      <UserRow nickname="Cicrano" />
+      <UserRow nickname="Cicrano" />
+      <UserRow nickname="Cicrano" />
+      <UserRow nickname="Cicrano" />
+      <UserRow nickname="Marciano" />
+      <UserRow nickname="Cicrano" />
+      <UserRow nickname="Cicrano" />
+      <UserRow nickname="Alienado" />
+      <UserRow nickname="Cicrano" />
+      <UserRow nickname="Cicrano" />
+      <UserRow nickname="Cicrano" />
+      <UserRow nickname="Cicrano" />
+      <UserRow nickname="Cicrano" />
     </Container>
   )
 }
