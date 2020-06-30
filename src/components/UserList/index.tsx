@@ -18,7 +18,7 @@ const UserRow: React.FC<UserProps> = ({ nickname, isBot }) => {
   )
 }
 
-const ServerName: React.FC = () => {
+const UserList: React.FC = () => {
   return (
     <Container>
       <Role>Disponível - 1</Role>
@@ -26,7 +26,7 @@ const ServerName: React.FC = () => {
       <UserRow nickname="Cakito Jr" />
 
       <Role>Offline - 18</Role>
-      <UserRow nickname="Jarlindo Souza" isBot={true} />
+      <UserRow nickname="Tsubuki" isBot={true} />
       <UserRow nickname="Cicrano" />
       <UserRow nickname="Cicrano" />
       <UserRow nickname="Cicrano" />
@@ -44,4 +44,4 @@ const ServerName: React.FC = () => {
   )
 }
 
-export default ServerName;
+export default UserList;
